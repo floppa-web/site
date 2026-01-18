@@ -1,0 +1,475 @@
+html{
+    user-select: none;
+    z-index: 0;
+}
+
+body {
+    background: conic-gradient(violet, purple, violet);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    margin: 0%;
+    padding: 0%;
+    min-height: 100vh;
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+html, body {
+    height: 120%;
+    margin: 0;
+}
+
+.HTMLtext{
+    margin-top: 20%;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 0.1s;
+    border-radius: 10%;
+    padding: 10px;
+    text-shadow: 0 10px 0px rgba(255, 255, 255, 0.3);
+}
+
+.HTMLtext:hover{
+    font-size: 120%;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    background: conic-gradient(purple, violet, purple), 0.2;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0px 30px rgba(0, 0, 0, 0);
+    text-shadow: 0 20px 0px rgba(5, 5, 5, 0);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.HTMLtext:active{
+    font-size:110%;
+    color: aliceblue;
+}
+
+
+.nav {
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    background-color: rgba(50, 50, 200, 0.2);
+    border-radius: 0;
+    height: 75px;
+    font-size: 50px;
+    font-weight:bold;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-radius: 30px;
+    transition: 0.1s;
+    top:0px;
+    position: fixed;
+    display: flex;
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    margin-right: 10px;
+    width: 100%;
+    z-index: 1000;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav:hover{
+    background-color: rgba(50, 50, 100, 0.3);
+    height: 200px;
+    backdrop-filter: blur(2px);
+}
+
+.nav:active{
+    background-color: rgba(10, 10, 100, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+h1{
+    font-family: 'Arial, Helvetica, sans-serif';
+}
+
+.cardNav{
+    flex-direction: row;
+    display:inline;
+    transition:0.1s;
+    border-radius: 20px;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 10px;
+}
+
+.cardNav:hover {
+    font-size: larger;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    background: conic-gradient(purple, violet, purple), 0.2;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cardNav:active{
+    font-size: 80%;
+}
+
+.main {
+    background: blur();
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    display: flex;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0px;
+}
+
+.projects {
+    height: 20000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.AboutCards {
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    display: grid;
+    height: 800px;
+    width: 800px;
+    color: white;
+    box-shadow: 0 4px 30px black;
+    background: rgba(100, 100, 200, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.AboutText1{
+    color: aliceblue;
+    font-size: 140%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.AboutCards:active{
+    background-image: url('etcPhoto3.jpg');
+}
+
+
+.info{
+    display: flex;
+    z-index:11;
+}
+
+.AboutCard {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 12;
+    height: 90%;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.582);
+    color: rgba(0, 0, 0, 0.8);
+
+}
+
+.AboutCard:hover{
+    z-index: 10;
+    margin: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.521);
+    width: 900px;
+    background-color: purple;
+    color: antiquewhite;
+    z-index: 12;
+    background-image: url('etcPhoto1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.AboutCard:active{
+    color: violet;
+    width: 140%;
+    font-size:200%;
+}
+
+.AboutCard,p{
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-weight: 1000;
+}
+
+.TitleProjects{
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.letter{
+    color: white;
+    transition: 0.1s;
+    padding: 0;
+    margin: 0;
+}
+.letter:hover{
+    text-shadow: 0 0px 20px white;
+    cursor: pointer;
+}
+.letter:active{
+    font-size: medium;
+}
+
+.about{
+    background: linear-gradient(purple, violet, purple), 0.2;
+    display: flex;
+    justify-content: center;
+}
+
+.CardAbout{
+    backdrop-filter: blur(10px);
+    display: flex;
+    height: 622px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.AboutText{
+    font-size: 500%;
+}
+
+.CardAboutInner{
+    backdrop-filter: blur(10px);
+    background-color: rgba(50, 0, 144, 0.3);
+    border-radius: 50px;
+    height: 90%;
+    padding: 10px;
+}
+
+.paragraphAbout{
+    font-size: xx-large;
+    color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.projects {
+    scroll-margin-top: 80px;
+    height: 1000px;
+}
+
+.imageAbout{
+    border-radius: 50px;
+    transition: 0.4s;
+    height: 400px;
+    width: 750px;
+    object-fit: cover;
+    transition: 0.1s ease-in;
+}
+.imageAbout:hover{
+    transform: translate3d(10px, 20px, 10px);
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px black;
+    border-radius: 50px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.imageAbout:active{
+    box-shadow: 0 10px 100px black;
+    border-radius: 50px;
+    transform: scale(1.2);
+    z-index: 999;
+}
+
+.textWrapAbout{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(25, 0, 77, 0.3);
+    border-radius: 35px;
+    height: 330px;
+    width: 700px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s ease-in-out;
+}
+
+.textWrapAbout:hover{
+    background-color: color-mix(in srgb, blue 10%, red 1%);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10 100px black;
+}
+.textWrapAbout:active{
+    transform: translate3d(0px, -20px, 0px);
+    box-shadow: 5px 20px 5 black;
+}
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.finalBlock {
+    height: 400px;
+    background: rgba(12, 21, 148, 0.219);
+    margin: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+.finalFooter {
+    position:relative;
+    background-color: fuchsia;
+    height: 80%;
+    background:rgba(151, 151, 194, 0.342);
+    margin: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px;
+    transition: 0.4s;
+}
+.finalFooter:hover {
+    background:rgba(45, 45, 68, 0.747);
+}
+.finalInputPhotos {
+    display: flrgba(58, 58, 212, 0.342)
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 130%;
+    height: 80px;
+    transition: 0.3s;
+    background: rgba(red, green, rgba(10, 10, 253, 0.884), alpha);
+}
+.finalButton {
+    display: flex;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 100px;
+    cursor: pointer;
+    background-color: #093b7079;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 130%;
+    transition:0.3s;
+}
+.finalButton:hover {
+    background-color: #1e0c5e;
+    font-size: 150%;
+}
+
+.finalText{
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    padding: 10px;
+    color: #ffff;
+}
+
+.finalBlock:hover{
+    background: rgba(29, 29, 59, 0.836), 0.4;
+}
+
+.floatingImage{
+    transform: rotate3d(1, 1, 0, -45deg);
+    position:absolute;
+    box-shadow: -100px 100px 8px 0px rgba(14, 42, 63, 0.877);
+    transition: 0.4s;
+    animation-name: rotatingImage;
+    animation-play-state:running;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: -1;
+    
+}
+.floatingImage:hover{
+    box-shadow: 0px 0px 100px 0px rgba(29, 29, 29, 0.966);
+    transform: scale(1.2);
+    transform: rotate3d(1,1,0,30deg);
+    animation-play-state: paused;
+}
+
+.transitionn{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 999;
+    animation: fadeOut 1s forwards;
+    animation-delay: 0s;
+}
+
+
+@keyframes rotatingImage {
+  0% {
+     transform: rotate3d(1, 1, 0, -35deg); 
+  }
+  50% {
+     transform: rotate3d(-1, 1, 0, 35deg); 
+  }
+  100% {
+     transform: rotate3d(1, 1, 0, -35deg); 
+  }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; display: none; }
+}
