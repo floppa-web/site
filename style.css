@@ -80,15 +80,19 @@ html, body {
     padding: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .nav:hover{
     background-color: rgba(50, 50, 100, 0.3);
     height: 200px;
     backdrop-filter: blur(2px);
+    box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    transform: scale(1.2) translate3d(0px, -20px, 0px);
 }
 
 .nav:active{
     background-color: rgba(10, 10, 100, 0.3);
     backdrop-filter: blur(5px);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 1) inset;
 }
 
 h1{
@@ -382,16 +386,27 @@ body {
     background:rgba(45, 45, 68, 0.747);
 }
 .finalInputPhotos {
-    display: flrgba(58, 58, 212, 0.342)
+    background-color: rgba(58, 58, 212, 0.342);
     display: inline-block;
     cursor: pointer;
     color: white;
     border-radius: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 130%;
+    font-size: 200%;
     height: 80px;
     transition: 0.3s;
     background: rgba(red, green, rgba(10, 10, 253, 0.884), alpha);
+    box-shadow: 5px 5px 5px -5px rgb(255, 255, 255) inset;
+}
+.finalInputPhotos:hover{
+    transform: translate3d(0px, -20px, 0px);
+    background-color: rgba(24, 105, 180, 0.582);
+    font-size: 220%;
+}
+.finalInputPhotos:active{
+    font-size: 180%;
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, 0.37) inset;
+    transform: translate3d(0px, 20px, 0px);
 }
 .finalButton {
     display: flex;
@@ -407,8 +422,15 @@ body {
     transition:0.3s;
 }
 .finalButton:hover {
+    transform: translate3d(0px, -5px, 0px);
     background-color: #1e0c5e;
     font-size: 150%;
+    box-shadow: 5px 5px 5px -5px rgb(255, 255, 255) inset;
+}
+.finalButton:active{
+    transform: translate3d(0px, -10px, 0px);
+    height: 80px;
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, 0.37) inset;
 }
 
 .finalText{
@@ -417,6 +439,9 @@ body {
     font-size: 200%;
     padding: 10px;
     color: #ffff;
+}
+.finalText:hover{
+    text-shadow:  4px 4px 32px 0px rgb(255, 255, 255);;
 }
 
 .finalBlock:hover{
@@ -437,12 +462,6 @@ body {
     z-index: -1;
     
 }
-.floatingImage:hover{
-    box-shadow: 0px 0px 100px 0px rgba(29, 29, 29, 0.966);
-    transform: scale(1.2);
-    transform: rotate3d(1,1,0,30deg);
-    animation-play-state: paused;
-}
 
 .transitionn{
     position: absolute;
@@ -455,6 +474,15 @@ body {
     animation: fadeOut 1s forwards;
     animation-delay: 0s;
 }
+
+.floatingImage:hover{
+  animation-play-state: paused;
+  box-shadow: 0px 0px 100px 0px rgba(29, 29, 29, 0.966);
+  transform: scale(1.2) rotate3d(1,1,0,30deg) translate3d(0px, -20px, 0px);
+}
+
+
+
 
 
 @keyframes rotatingImage {
@@ -473,3 +501,4 @@ body {
     from { opacity: 1; }
     to { opacity: 0; display: none; }
 }
+
